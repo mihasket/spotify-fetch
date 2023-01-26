@@ -2,11 +2,9 @@
 
 Neofetch-like tool for fetching spotify artist and album information.
 
-Artist
 <img src="/images/artist_information.png">
 
-Album
-<img src="/images/album_information.png"> |
+<img src="/images/album_information.png">
 
 # Dependencies
 - [Spotipy](https://github.com/spotipy-dev/spotipy)
