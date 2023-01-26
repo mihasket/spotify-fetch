@@ -79,7 +79,7 @@ def get_album(artist, album_name):
         if name not in seen:
             # Checks for typos in album argument
             if similar(name, album_name) > 0.50:
-                return album#['images'][0]['url']
+                return album
             seen.add(name)
  
 def get_album_cover_url(album):
@@ -174,7 +174,7 @@ def show_album_info(artist_name, album_name):
 
     if cover_url is not None:
         image = climage.convert_url(url=cover_url, is_unicode=True, width=24)
-        album_fetch(image=image, album=album, artist_name=artist_name, album_name=album_name)
+        album_fetch(image=image, album=album, artist_name=artist_name, album_name=album['name'])
     else:
         print("Error album argument")
 
