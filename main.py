@@ -99,12 +99,12 @@ def artist_fetch(image, artist, artist_name):
     latest_album = get_latest_album(artist)
     genre = get_artist_genre(artist)
 
-    artist_array.append(colors.BOLD + colors.OKBLUE + "Artist: " + colors.UNDERLINE + artist_name)
-    artist_array.append(colors.BOLD + colors.OKGREEN + "Top Song 1: " + colors.UNDERLINE + top_songs[0])
-    artist_array.append(colors.BOLD + colors.OKGREEN + "Top Song 2: " + colors.UNDERLINE + top_songs[1])
-    artist_array.append(colors.BOLD + colors.OKGREEN + "Top Song 3: " + colors.UNDERLINE + top_songs[2])
-    artist_array.append(colors.BOLD + colors.WARNING + "Latest Album: " + colors.UNDERLINE + latest_album)
-    artist_array.append(colors.BOLD + colors.OKCYAN + "Genre: " + colors.UNDERLINE + genre.title())
+    artist_array.append(colors.BOLD + colors.BLUE + "Artist: " + colors.UNDERLINE + artist_name)
+    artist_array.append(colors.BOLD + colors.GREEN + "Top Song 1: " + colors.UNDERLINE + top_songs[0])
+    artist_array.append(colors.BOLD + colors.GREEN + "Top Song 2: " + colors.UNDERLINE + top_songs[1])
+    artist_array.append(colors.BOLD + colors.GREEN + "Top Song 3: " + colors.UNDERLINE + top_songs[2])
+    artist_array.append(colors.BOLD + colors.LIGHTGREEN + "Latest Album: " + colors.UNDERLINE + latest_album)
+    artist_array.append(colors.BOLD + colors.CYAN + "Genre: " + colors.UNDERLINE + genre.title())
 
     i = 0
     num_of_new_lines = 0
@@ -129,10 +129,10 @@ def album_fetch(image, album, artist_name, album_name):
 
     total_tracks = str(get_album_total_tracks(album))
     release_date = get_album_release_date(album)
-    album_information_array.append(colors.BOLD + colors.OKBLUE + "Artist: " + colors.UNDERLINE + artist_name)
-    album_information_array.append(colors.BOLD + colors.OKGREEN + "Album: " + colors.UNDERLINE + album_name)
-    album_information_array.append(colors.BOLD + colors.WARNING + "Total Tracks: " + colors.UNDERLINE + total_tracks)
-    album_information_array.append(colors.BOLD + colors.OKCYAN + "Release Date: " + colors.UNDERLINE + release_date)
+    album_information_array.append(colors.BOLD + colors.BLUE + "Artist: " + colors.UNDERLINE + artist_name)
+    album_information_array.append(colors.BOLD + colors.GREEN + "Album: " + colors.UNDERLINE + album_name)
+    album_information_array.append(colors.BOLD + colors.LIGHTGREEN + "Total Tracks: " + colors.UNDERLINE + total_tracks)
+    album_information_array.append(colors.BOLD + colors.CYAN + "Release Date: " + colors.UNDERLINE + release_date)
 
     i = 0
     num_of_new_lines = 0
