@@ -17,8 +17,8 @@ A work in progress (not yet finished).
 
 Put the following variables in your `.zshrc` or `.bashrc` or whatever shell you are using
 ```bash
-export SPOTIFY_CLIENT_ID='your_id'
-export SPOTIFY_CLIENT_SECRET='your_secret'
+export SPOTIPY_CLIENT_ID='your_id'
+export SPOTIPY_CLIENT_SECRET='your_secret'
 ```
 
 # Installation
