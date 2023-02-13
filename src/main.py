@@ -1,19 +1,24 @@
 import os
+import sys
 import spotipy
 import climage
 import argparse
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
 from difflib import SequenceMatcher
-from colors import colors
+from src.colors import colors
 
 load_dotenv()
 
-client_id = os.getenv('CLIENT_ID')
-client_secret = os.getenv('CLIENT_SECRET')
+try:
+    client_id = os.environ["SPOTIFY_CLIENT_ID"]
+    client_secret = os.environ["SPOTIFY_CLIENT_SECRET"]
 
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
                                                            client_secret=client_secret))
+except:    
+    print("Spotify client credentials are not setup correctly!")
+    sys.exit(1)
 
 def similar(string_a, string_b):
     return SequenceMatcher(None, string_a, string_b).ratio()
