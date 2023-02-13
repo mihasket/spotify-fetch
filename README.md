@@ -2,14 +2,22 @@
 
 Neofetch-like tool for fetching spotify artist and album information.
 
-<img src="/images/artist_information.png">
+![Artist information](/images/artist_information.png)
 
-<img src="/images/album_information.png">
+![Album information](/images/album_information.png)
 
 # Dependencies
 - [Spotipy](https://github.com/spotipy-dev/spotipy)
 - My version of [CLImage](https://github.com/mihasket/CLImage)
 - Original version of CLImage can be found [here](https://github.com/pnappa/CLImage)
+
+# Requirements
+
+Put the following variables in your `.zshrc` or `.bashrc` or whatever shell you are using
+```bash
+export SPOTIFY_CLIENT_ID='your_id'
+export SPOTIFY_CLIENT_SECRET='your_secret'
+```
 
 # Usage
 
@@ -27,5 +35,5 @@ python main.py --artist "C418" --album "Volume Beta"
 - Update README
 - List Dependencies
 - Add licence
-- Make a install script
 - Reorganize
+- Save cache in .cache
