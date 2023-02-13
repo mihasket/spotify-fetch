@@ -1,4 +1,3 @@
-import os
 import sys
 import spotipy
 import climage
@@ -7,15 +6,14 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
 from difflib import SequenceMatcher
 from src.colors import colors
+from spotipy.cache_handler import MemoryCacheHandler
 
 load_dotenv()
 
 try:
-    client_id = os.environ["SPOTIFY_CLIENT_ID"]
-    client_secret = os.environ["SPOTIFY_CLIENT_SECRET"]
+    auth_manager = SpotifyClientCredentials(cache_handler=MemoryCacheHandler())
+    sp = spotipy.Spotify(auth_manager=auth_manager)
 
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
-                                                           client_secret=client_secret))
 except:    
     print("Spotify client credentials are not setup correctly!")
     sys.exit(1)
