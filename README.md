@@ -2,6 +2,8 @@
 
 Neofetch-like tool for fetching spotify artist and album information.
 
+A work in progress (not yet finished).
+
 ![Artist information](/images/artist_information.png)
 
 ![Album information](/images/album_information.png)
@@ -19,16 +21,25 @@ export SPOTIFY_CLIENT_ID='your_id'
 export SPOTIFY_CLIENT_SECRET='your_secret'
 ```
 
-# Usage
+# Installation
+
+`Install from source`
+```bash
+git clone https://github.com/mihasket/spotify-fetch.git
+cd spotify-fetch
+pip install .
+```
+
+# Usage example
 
 For displaying artist information
 ```bash
-python main.py --artist "C418"
+spotify-fetch --artist "C418"
 ```
 
 For displaying album information
 ```bash
-python main.py --artist "C418" --album "Volume Beta"
+spotify-fetch --artist "C418" --album "Volume Beta"
 ```
 
 # TO DO
