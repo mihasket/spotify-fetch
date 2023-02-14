@@ -2,11 +2,7 @@
 
 Neofetch-like tool for fetching spotify artist and album information.
 
-A work in progress (not yet finished).
-
-![Artist information](/images/artist_information.png)
-
-![Album information](/images/album_information.png)
+![](/images/example.png)
 
 # Dependencies
 - [Spotipy](https://github.com/spotipy-dev/spotipy)
@@ -15,7 +11,21 @@ A work in progress (not yet finished).
 
 # Requirements
 
-Put the following variables in your `.zshrc` or `.bashrc` or whatever shell you are using
+1. You will need to have [Spotipy](https://github.com/spotipy-dev/spotipy) installed.
+Install with pip install
+```bash
+pip install spotipy
+```
+
+2. You will need to have [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage) installed.
+```bash
+git clone https://github.com/mihasket/CLImage
+cd CLImage
+pip install .
+```
+Once you have successfully installed the fork, you can safely delete the directory.
+
+3. Put the following variables in your `.zshrc` or `.bashrc` or whatever shell you are using
 ```bash
 export SPOTIPY_CLIENT_ID='your_id'
 export SPOTIPY_CLIENT_SECRET='your_secret'
@@ -23,7 +33,7 @@ export SPOTIPY_CLIENT_SECRET='your_secret'
 
 # Installation
 
-`Install from source`
+Install from source
 ```bash
 git clone https://github.com/mihasket/spotify-fetch.git
 cd spotify-fetch
@@ -41,10 +51,3 @@ For displaying album information
 ```bash
 spotify-fetch --artist "C418" --album "Volume Beta"
 ```
-
-# TO DO
-- Update README
-- List Dependencies
-- Add licence
-- Reorganize
-- Save cache in .cache
