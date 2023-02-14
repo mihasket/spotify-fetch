@@ -7,7 +7,6 @@ Neofetch-like tool for fetching spotify artist and album information.
 # Requirements
 
 1. You will need to have [Spotipy](https://github.com/spotipy-dev/spotipy) installed.
-Install with pip install
 ```bash
 pip install spotipy
 ```
@@ -25,6 +24,7 @@ Once you have successfully installed the fork, you can safely delete the directo
 ![](/images/spotify_app_1.png)
 
 Once you have successfully registered an app, find your `Client ID` and `Client Secret`
+
 ![](/images/spotify_app_2.png)
 
 Just make sure you don't share your `Client ID` and `Client Secret` because they should not be shared (I have already deleted my app that shows the `Client ID` and `Client Secret`)
