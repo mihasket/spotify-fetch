@@ -4,11 +4,6 @@ Neofetch-like tool for fetching spotify artist and album information.
 
 ![](/images/example.png)
 
-# Dependencies
-- [Spotipy](https://github.com/spotipy-dev/spotipy)
-- My version of [CLImage](https://github.com/mihasket/CLImage)
-- Original version of CLImage can be found [here](https://github.com/pnappa/CLImage)
-
 # Requirements
 
 1. You will need to have [Spotipy](https://github.com/spotipy-dev/spotipy) installed.
