@@ -6,12 +6,12 @@ Neofetch-like tool for fetching spotify artist and album information.
 
 # Requirements
 
-1. You will need to have [Spotipy](https://github.com/spotipy-dev/spotipy) installed.
+1. Install [Spotipy](https://github.com/spotipy-dev/spotipy)
 ```bash
 pip install spotipy
 ```
 
-2. You will need to have [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage) installed.
+2. Install [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage) installed.
 ```bash
 git clone https://github.com/mihasket/CLImage
 cd CLImage
@@ -27,7 +27,7 @@ Once you have successfully registered an app, find your `Client ID` and `Client 
 
 ![](/images/spotify_app_2.png)
 
-Just make sure you don't share your `Client ID` and `Client Secret` because they should not be shared (I have already deleted my app that shows the `Client ID` and `Client Secret`)
+Don't share your `Client ID` and `Client Secret`.
 
 4. Put the following variables you just got in your `.zshrc` or `.bashrc` or whatever shell you are using
 ```bash
