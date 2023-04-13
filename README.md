@@ -11,7 +11,7 @@ Neofetch-like tool for fetching spotify artist and album information.
 pip install spotipy
 ```
 
-2. Install [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage) installed.
+2. Install [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage)
 ```bash
 git clone https://github.com/mihasket/CLImage
 cd CLImage
