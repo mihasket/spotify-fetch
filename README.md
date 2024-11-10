@@ -6,30 +6,15 @@ Neofetch-like tool for fetching spotify artist and album information.
 
 # Requirements
 
-1. Install [Spotipy](https://github.com/spotipy-dev/spotipy)
-```bash
-pip install spotipy
-```
+1. Register a [spotify app](https://developer.spotify.com/dashboard/login) and name it `sfetch` or whatever name you would like. 
 
-2. Install [my fork](https://github.com/mihasket/CLImage) of [CLImage](https://github.com/pnappa/CLImage)
-```bash
-git clone https://github.com/mihasket/CLImage
-cd CLImage
-pip install .
-```
-Once you have successfully installed the fork, you can safely delete the directory.
+The redirect URI can be any valid URI such as `http://localhost`, `http://example.com`.
 
-3. Register a [spotify app](https://developer.spotify.com/dashboard/login) and name it `spotify-fetch` or whatever name you would like. 
-
-![](/images/spotify_app_1.png)
-
-Once you have successfully registered an app, find your `Client ID` and `Client Secret`
-
-![](/images/spotify_app_2.png)
+Once you have successfully registered an app, find your `Client ID` and `Client Secret`.
 
 Don't share your `Client ID` and `Client Secret`.
 
-4. Put the following variables you just got in your `.zshrc` or `.bashrc` or whatever shell you are using
+2. Put the following variables you just got in your `.zshrc` or `.bashrc` or whatever shell you are using
 ```bash
 export SPOTIPY_CLIENT_ID='your_client_id'
 export SPOTIPY_CLIENT_SECRET='your_client_secret'
@@ -39,8 +24,8 @@ export SPOTIPY_CLIENT_SECRET='your_client_secret'
 
 Install from source
 ```bash
-git clone https://github.com/mihasket/spotify-fetch.git
-cd spotify-fetch
+git clone https://github.com/mihasket/sfetch.git
+cd sfetch
 pip install .
 ```
 
@@ -48,10 +33,10 @@ pip install .
 
 For displaying artist information
 ```bash
-spotify-fetch --artist "C418"
+sfetch --artist "C418"
 ```
 
 For displaying album information
 ```bash
-spotify-fetch --artist "C418" --album "Volume Beta"
+sfetch --artist "C418" --album "Volume Beta"
 ```

@@ -2,5 +2,5 @@
 .env
 __pycache__
 build/
-spotify_fetch.egg-info/
+sfetch.egg-info/
 TODO.md
