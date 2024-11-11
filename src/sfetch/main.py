@@ -7,15 +7,6 @@ from dotenv import load_dotenv
 from spotipy.cache_handler import MemoryCacheHandler
 
 
-def get_args():
-    parser = parser = argparse.ArgumentParser()
-
-    parser.add_argument('--artist', help='Artist name')
-    parser.add_argument('--album', help='Album name')
-
-    return parser.parse_args()
-
-
 def main():
     load_dotenv()
 
@@ -24,19 +15,22 @@ def main():
         sp = spotipy.Spotify(auth_manager=auth_manager)
     except Exception:
         print("Spotify client credentials are not setup correctly!")
+        print("Visit https://spotipy.readthedocs.io/ for additional information.")
         sys.exit(1)
 
-    args = get_args()
+    parser = argparse.ArgumentParser()
 
-    # Output album information
+    parser.add_argument('--artist', help='Artist name, example: sfetch --artist "Mac Miller"')
+    parser.add_argument('--album', help='Album name, needs to be combined with artist argument, example: sfetch --artist "Mac Miller" --album "Swimming"')
+
+    args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
+
     if (args.artist is not None and args.album is not None):
         show_album_info(sp, args.artist, args.album)
-    # Output artist information
     elif (args.artist is not None and args.album is None):
         show_artist_info(sp, args.artist)
-    # No arguments or only album argument
     else:
-        print("No arguments or only album argument are not allowed!")
+        parser.print_help()
 
 
 if __name__ == "__main__":
