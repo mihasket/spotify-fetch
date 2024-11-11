@@ -2,5 +2,6 @@
 .env
 __pycache__
 build/
-sfetch.egg-info/
+*.egg-info/
 TODO.md
+dist/
