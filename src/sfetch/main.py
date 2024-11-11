@@ -1,7 +1,7 @@
 import sys
 import spotipy
 import argparse
-from src.helpers import show_album_info, show_artist_info
+from sfetch.helpers import show_album_info, show_artist_info
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
 from spotipy.cache_handler import MemoryCacheHandler
