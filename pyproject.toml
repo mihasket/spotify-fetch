@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sfetch"
-version = "1.1.0"
+version = "1.0.0"
 authors = [
   { name="Miha Šket", email="sket.miha@proton.me" },
 ]
