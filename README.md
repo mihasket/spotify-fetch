@@ -1,6 +1,6 @@
 # Spotify Fetch
 
-Neofetch-like tool for fetching spotify artist and album information.
+Command-line tool for displaying spotify artist and album information.
 
 ![](/images/example.png)
 
