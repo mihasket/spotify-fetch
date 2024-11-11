@@ -2,7 +2,7 @@ import requests
 import climage
 from io import BytesIO
 from PIL import Image
-from src.colors import colors
+from sfetch.colors import colors
 from difflib import SequenceMatcher
 
 
