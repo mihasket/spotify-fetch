@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sfetch"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Miha Šket", email="sket.miha@proton.me" },
 ]
@@ -24,3 +24,6 @@ Issues = "https://github.com/mihasket/sfetch/issues"
 
 [project.scripts]
 sfetch = "sfetch.main:main"
+
+[project.gui-scripts]
+sfetch = "sfetch.main:main_gui"
